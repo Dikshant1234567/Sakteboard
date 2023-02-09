@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+.videoBox{
+    margin: 10px;
+    width: 23%;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.videoBox video{
+    height: 13rem;
+    /* background-color: plum; */
+    width: 100%;
+}
+.videoDes{
+    height: 6rem ;
+    padding: 5px;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.532);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.videoDes h4{
+    font-size: 22px;
+    color: white;
+    font-weight: 600;
+}
+.videoDes p{
+    font-size: 14px;
+    color:wheat;
+    font-weight: 400;
+}
+.videoBox:hover .videoBox video{
+    transform: translateX(10px);
+}
+
+@media (700px<width<=900px) {
+    .videoBox {
+        width: 46%;
+    }
+}
+
+@media (max-width:701px) {
+    .videoBox {
+        width: 85%;
+    }
+}
+

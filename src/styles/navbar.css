@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+.samll_s {
+  background-color: seagreen;
+  padding: 15px;
+  border-radius: 50%;
+  margin-right: 10px;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  margin-left: 12px;
+  font-size: 25px;
+  color: white;
+  font-weight: 900;
+  display: none;
+}
+.navbar {
+  position: fixed;
+  width: 16%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95);
+  text-transform: capitalize;
+  padding: 1rem;
+  color: white !important;
+  overflow: scroll !important;
+}
+.menu,
+.category {
+  width: 100%;
+  padding: 10px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.menu h4,
+.category h4 {
+  margin: 10px 0;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  color: wheat;
+}
+li {
+  display: flex;
+  margin: 15px 10px;
+  align-items: center;
+  cursor: pointer;
+}
+li button {
+  background-color: #45454a;
+  padding: 15px;
+  border-radius: 50%;
+  margin-right: 10px;
+  outline: none;
+  border: 0;
+  /* background-color: rgba(0, 0, 0, 0.906); */
+  cursor: pointer;
+}
+li i {
+  color: wheat;
+  font-size: 12px;
+}
+.nav-links {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.772);
+}
+.navItem {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+li:hover .nav-links {
+  color: white;
+  font-weight: 600;
+}
+li:hover .button:nth-child(1) {
+  background-color: orangered;
+}
+
+@media (max-width: 900px) {
+  .samll_s{
+    display: block;
+  }
+  li button {
+    border-radius: 30%;
+  }
+  .nav-links {
+    display: none;
+  }
+  .menu h4,
+  .category h4 {
+    display: none;
+  }
+  .navbar h1 {
+    display: none;
+  }
+  .navbar hr {
+    display: none;
+  }
+
+  .button i {
+    font-size: 20px;
+    color: white;
+  }
+  .category {
+    width: 100%;
+    padding: 10px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -33px;
+  }
+}
+@media (max-width: 700px) {
+  .samll_s{
+    display: block;
+    padding: 8px;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .navbar {
+    padding: 0.2rem;
+  }
+  .category li {
+    margin-top: 28px;
+  }
+  .menu li {
+    margin-top: 22px;
+  }
+  .menu,
+  .category {
+    padding: 0;
+  }
+  .button {
+    padding: 8px;
+  }
+  .button i {
+    font-size: 16px;
+  }
+}

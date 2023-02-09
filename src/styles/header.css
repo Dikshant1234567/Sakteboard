@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+.header {
+	padding: 2rem;
+	background-color: rgba(0, 0, 0, 0.95);
+	width: 84vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	height: 7rem;
+  margin-left: 16vw;
+}
+#search {
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.807);
+  color: white;
+}
+.searchHead {
+  position: relative;
+  width: 40%;
+}
+.searchIcon {
+  position: absolute;
+  right: 1rem;
+  top: 10px;
+  color: white;
+  font-weight: 600;
+}
+.profileHead {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+.profileHead img {
+  width: 40px;
+  border-radius: 50%;
+}
+.profileHead p {
+  color: white;
+  margin: 0 15px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.profileHead i {
+  color: white;
+}
+
+@media (max-width:700px) {
+  .profileHead {
+    margin-right: 0rem;
+  }
+  .profileHead p{
+    display: none;
+  }
+  .profileHead i {
+    margin-left: 19px;
+  }
+}

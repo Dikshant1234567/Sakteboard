@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+.playerContiner {
+  height: 90%;
+  width: 25%;
+  background-color: black;
+  overflow: scroll;
+  margin-top: 0.5rem;
+}
+.sidePlayer {
+  width: 100%;
+  position: relative;
+  border-radius: 20px;
+}
+.sidePlayer h1 {
+  color: white;
+  width: 100%;
+  padding: 20px;
+}
+.sidePlayer hr {
+  color: black;
+  height: 2px;
+  width: 80%;
+  margin-left: 20px;
+}
+.sidePlayer ul li {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+.sidePlayer ul li p {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+.sidePlayer ul li img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.comment {
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  padding: 1rem;
+  background-color: black;
+}
+#commentInput {
+  border-radius: 10px;
+  width: 90%;
+  padding: 5px;
+  font-size: 14px;
+  outline: none;
+  color: black;
+  font-weight: 500;
+  margin-left: 10px;
+  position: relative;
+}
+.sendIcon {
+  position: absolute;
+  color: black;
+  font: 40px;
+  bottom: 1.6rem;
+  right: 3rem;
+}
+.relatedVideo {
+  margin-top: 2rem;
+}
+@media (max-width:1000px) {
+  .playerContiner {
+    width: 90%;
+    margin-top: 4.5rem;
+  }
+}

@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+.discover-container {
+  width: 84%;
+margin-left: 16vw;
+  overflow: scroll;
+  margin-top: 7rem;
+  height: 84.2vh;
+}
+
+.discHead {
+  padding: 0rem 2rem;
+  font-size: 35px;
+  font-weight: 900;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.95);
+  height: 3.8rem;
+}
+
+.disImg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 30rem; */
+  margin-top: 3rem;
+}
+.disImg1 {
+  margin: 20px;
+  position: relative;
+  width: 53%;
+  height: 22rem;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.disImg2 {
+  margin: 20px;
+  position: relative;
+  width: 40%;
+  height: 22rem;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.disImg1 h2,
+.disImg2 h2 {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  font-size: 35px;
+  color: white;
+  /* color: #03001C; */
+  font-weight: bolder;
+  text-shadow: -3px -2px 14px royalblue;
+}
+.disImg1::before {
+  content: "";
+  background: url("https://images.pexels.com/photos/1018484/pexels-photo-1018484.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-repeat: no-repeat;
+  background-position: left -100px;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 22rem;
+  z-index: -10;
+  opacity: 0.89;
+}
+.disImg2::before {
+  content: "";
+  background: url("https://images.unsplash.com/photo-1569135579442-d37b7a0ea74e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHNrYXRlYm9hcmR8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60");
+  background-repeat: no-repeat;
+  background-position: left -100px;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 22rem;
+  z-index: -100;
+  opacity: 0.89;
+}
+.profo {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  position: absolute;
+  bottom: 3rem;
+  left: 25px;
+}
+.profoDes {
+  margin-right: 2px;
+}
+.profoDes p {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+.profoDes h6 {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+}
+.profo img {
+  width: 40px;
+  height: 42px;
+  border-radius: 50%;
+  margin: 20px 10px;
+}
+.mainVideoContainer {
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.mainVideoContainer h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.runningVideoMain {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (700px <width<=900px){
+  .discover-container{
+    height: 90vh;
+  }
+  .disImg {
+    flex-direction: column;
+ 
+  }
+  .disImg1{
+    height: 20rem;
+    width: 85%;
+  }
+  .disImg2 {
+    height: 26rem;
+    width: 85%;
+  }
+  .disImg1::before, .disImg2::before {
+    height: 26rem;
+  }
+  .profo {
+    bottom: 1rem;
+  }
+}
+
+@media (max-width:700px) {
+  .discover-container {
+    height: 90.2vh;
+  }
+  .disImg {
+    flex-direction: column;
+  }
+  .disImg1 {
+    width: 95%;
+    height: 19rem;
+  }
+  .disImg2{
+    width: 95%;
+    height: 25rem;
+  }
+  .disImg1::before, .disImg2::before {
+    height: 25rem;
+  }
+  .profo {
+    bottom: 1rem;
+  }
+}

@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+.DescriptionContainer{
+  width: 100%;
+  /* background: #000; */
+  color: white;
+  height: 20rem;
+}
+
+.desmain{
+    margin: 20px 30px;
+}
+.desmain h2{
+    font-size: 35px;
+}
+.desmain p {
+	font-size: 13px;
+	font-weight: 400;
+	color: beige;
+	word-spacing: 1px;
+	margin-top: 13px;
+  line-height: 20px;
+}
+.descriptionHead{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  padding: 20px;
+}
+.head1{
+  display: flex;
+  align-items: center;
+}
+.head1 img{
+height: 40px;
+width: 40px;
+border-radius: 50%;
+}
+.head1 span{
+margin-left: 10px;
+}
+.head2 button{
+padding: 10px 25px;
+color: black;
+font-weight: 700;
+margin: 0 10px;
+cursor: pointer;
+outline: none;
+border: 0;
+border-radius: 10px;
+color: white;
+}
+.head2 button:nth-child(1){
+  background-color: green;
+}
+.head2 button:nth-child(2){
+  background-color: crimson;
+}
+
+@media (max-width:700px) {
+  .descriptionHead {
+    
+    align-items: flex-start;
+    justify-content: none;
+    
+    padding: 20px;
+    flex-direction: column;
+  }
+  .head1 {
+    margin: 10px 5px;
+  }
+  .head2{
+    margin-top: 10px;
+  }
+}
